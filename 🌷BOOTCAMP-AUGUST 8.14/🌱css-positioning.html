@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="assets/css/positioning.css">
+</head>
+<body>
+    <!-- Float -->
+    <!-- positionについて
+        static：初期値はこれ。指定することはほとんどない
+        relative：現在の位置を基準に相対的な位置を決める
+        absolute：親要素を基準に絶対的な位置を決める
+        fixed：画面のきまった位置に固定する -->
+<header>
+       <div class="div1">
+         <img src="assets/images/rabbit2芝.jpeg" alt="usagi" height="70%" width="100%" class="float" style="border-radius: 10PX 10PX 0PX 0PX;">
+         <p class="obj-float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore quisquam harum minima atque tenetur ipsum, fugit, perspiciatis molestias doloribus commodi? Ratione a odio nam libero, quis in molestias magnam!</p>
+       </div>
+      <!-- <div class="div2">
+         <img src="assets/images/ちいかわ顔.png" alt="tiikawa" height="200px" width="100%" class="float1">
+        <img src="assets/images/rabbit2芝.jpeg" alt="usagi" height="200px" width="200px" class="z-index">
+       </div> -->
+</header>
+<main>
+     <!-- Z-index : 要素の重なり順を決めるプロパティ-->
+     <div class="box blue"></div>
+     <div class="box red"></div>
+     <div class="box green"></div>
+</main>
+    <hr>
+    <br>
+    <h1 id="top">POSITION</h1>
+    <div class="static">
+        <h2>STATIC</h2>
+    </div> 
+    <div class="relative">
+        <h2>RELATIVE</h2>
+    </div>
+    <div class="absolute">
+        <h2>ABSOLUTE</h2>
+    </div>
+    <div class="fixed">
+        <a href="#top">Back to the Top!</a>
+    </div>
+</body>
+</html>

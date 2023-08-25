@@ -1,0 +1,41 @@
+/* LIST STYLE TYPE */
+/* Un Order List */
+.none{
+    list-style: none;
+}
+.disc{
+    list-style: disc;
+}
+.circle{
+    list-style: circle;
+}
+.square{
+    list-style: square;
+}
+/* Order List */
+.decimal{
+    list-style: decimal;
+}
+.lower-alpha{
+    list-style: lower-alpha;
+}
+.upper-alpha{
+    list-style: upper-alpha;
+}
+.lower-roman{
+    list-style: lower-roman;
+}
+.upper-roman{
+    list-style: upper-roman;
+}
+/* LIST STYLE POSITION */
+.inside{
+    list-style-position: inside;
+}
+.outside{
+    list-style-position: outside;
+}
+/* LIST STYLE SHORTHAND */
+.short{
+    list-style: lower-roman inside;
+}

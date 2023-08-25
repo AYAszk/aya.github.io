@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+/* (1) Header Area */
+.nav{
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+
+.nav h1{
+  text-transform: uppercase; 
+  width: 50%;
+  float: left;
+  color:#96746b
+}
+
+.nav h1 a{
+    font-family:'Osward', sans-serif; 
+}
+
+.nav ul{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top:1em
+}
+
+.nav ul li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.nav li a{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    color: #312a26;
+    text-decoration: none;
+    
+}
+
+/* Banner styling */
+
+.banner{
+    width: 100%;
+    height: 670px;
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    /* object-fit:は使えない Because object fit is not for background. It's for the image element. So you cannot use this one.*/
+    background-position: center;
+    position: relative;
+}
+
+.banner-text{
+    position: absolute;
+    top: 45%;
+    left: 7.5%;
+    width: 45%;
+}
+
+.banner-text h2{
+    color: #c7a17a;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.banner-text h2 span{
+    color: #96746b;
+}
+
+.banner-text p{
+    color: #ffffff;
+}
+
+.banner-text a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    background: #312a26;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* ads styling */
+
+.ads{
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-item-1{
+    background-image: url('../images/ads-img1.jpg');
+    margin-right: 3%;
+}
+
+.ads-item-2{
+    background-image: url('../images/ads-img2.jpg');
+}
+
+/* 二つ目のアイコン達 */
+.ads-item-3{
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.ads-item-4{
+    background-image: url('../images/ads-img4.jpg');
+    margin-bottom: 3%;
+}
+
+.ads-item-5{
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 3%;
+}
+
+.ads-item-6{
+    background-image: url('../images/ads-img6.jpg');
+}
+
+
+.ads-items{
+    width: 48.5%;
+    height: 350px;
+    float:left;
+    background-size: cover;
+    position:relative;
+}
+.ads-text {
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    width: 40%;
+}
+.ads-text h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312A26;
+}
+.ads-text a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    /* テキストを大文字（uppercase）、小文字（lowercase） */
+    margin-top: 1em;
+    text-shadow: 3px 3px 5px #312A26;
+}
+
+
+/* [4] Merchandise Section */
+.merch{
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #c7a17a;
+}
+
+.section-header h2{
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+.merch-gallery{
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items{
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+/* nth-child ~~ pseudo class ~~ will pick the specific number of the child of the parent element */
+.merch-items:nth-child(4){
+    margin-right: 0;
+}
+.merch-items:nth-child(8){
+    margin-right: 0;
+}
+
+.merch-items img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; 
+    /* object-fit ~~ will fit the image inside the 
+    container width properly and not stretch it */
+}
+
+/* 8.24 discount */
+.discount-text{
+    text-align: center ;
+    width: 50% ;
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%) ;
+}
+
+
+.discount{/* ここで画像を設定することで、中に文章を組み込める。表だと画像と文章で分かれてしまう。 */
+    width: 85%;
+    height: 350px;
+    margin: 4em auto ;
+    background-image:url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.discount span{ /* 小さい文章 */
+    font-family: 'Raleway',sans-serif ;
+    color: #fff;
+    font-style: italic;
+    text-shadow:3px 3px 6px #312a26;
+}
+
+.discount h2{ /* メインの文章 */
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow:3px 3px 6px #312a25;
+}
+
+.discount-text a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: #ffffff80 ;
+    color: #312a26;
+    font-family:'Raleway',sans-serif;
+    font-weight: 700 ;
+    margin-top: 1em;
+}
+/* 
+/* 予約サイト----------------------------------------------------- */
+.reservation{
+    width: 85%;
+    margin:4em auto;
+}
+
+.form{
+    overflow: auto;
+}
+
+.form-group{
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 620px;
+}
+
+.form-group:nth-child(1){
+    margin-right: 1%;
+}
+
+
+form input,
+form label,
+form select,
+form textarea{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway',sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: .5em;
+ }   
+
+.res-time{
+    text-align: center;
+}
+
+.res-time *{
+    width: auto;
+}
+
+form p{
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ::after ~~ pseudo element ~~ it will add an element after the specificied selector/element */
+form h3::after{
+    content: "";
+    background-image: url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+/* classで指定した部分のみ動き、.を外した場合は適応されない */
+.res-agreement *{
+    width: auto;
+}
+
+form input[type="submit"]{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* [8] Reservation Form Section */
+.reservation{
+    width: 85%;
+    margin: 4em auto;
+}
+
+form{
+    overflow: auto;
+}
+
+.form-group{
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 700px;
+    
+}
+
+.form-group:nth-child(1){
+    margin-right: 1%;
+}
+
+form input,
+form label,
+form select,
+form textarea{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+form label{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: .5em;
+}
+
+.res-time{
+    text-align: center;
+}
+
+.res-time *{
+    width: auto;
+}
+
+form p{
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+} */
+
+/* ::after ~~ pseudo element ~~ it will add an element after the specificied selector/element */
+form h3::after{
+    content: "";
+    background-image: url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.res-agreement *{
+    width: auto;
+}
+
+form input[type="submit"]{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+/* フッターーーーーーーーーーーーーーーーーーーーーー */
+/* [9] Footer Section */
+.footer{
+    background-image: url('../images/footer-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.footer-contents{
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+
+.footer-widgets{
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+
+.footer-widgets h3{
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-widgets h4{
+    color: #fff;
+    /* font-size: 20px; */
+}
+
+.footer-widgets p{
+    color: #c7a17a;
+}
+
+.footer td, th{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer-form *{
+    width: auto;
+}
+
+.footer-social{
+    color: #fff;
+    background-color: #19100F;
+    overflow: auto;
+    padding: 1em 0px;
+    
+}
+
+.social-widget{
+    width: 32%;
+    float: left;
+    text-align: center;
+}
+
+.social-widget h3{
+    text-transform: uppercase;
+}
+
+.social-widget img{
+    width: 1.5em;
+}
+
+/* form input[type="submit"]{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+} */
+#move1{
+    margin-left: -2.5px;
+}
+.social-widget p{
+    font-weight: 900;
+}
+
+.left{
+    margin-right: 10px;
+}
+.right{
+    margin-left: 10px;
+}

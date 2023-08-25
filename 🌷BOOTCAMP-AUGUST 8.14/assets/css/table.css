@@ -1,0 +1,36 @@
+/* 
+🟥table{
+    border: 3px solid palevioletred;
+    background-color: aquamarine;
+}
+//td and th
+td{
+    border: 1px solid coral;
+}
+tr{
+    background-color: palegreen;
+}
+ */
+
+ table{
+    width: 70%;
+    border: 2px solid blue;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    empty-cells: hide;
+ }
+
+ tr.even{
+    background-color: paleturquoise;
+    color: teal;
+ }
+tr.odd{
+    background-color: cadetblue;
+    color: brown;
+}
+td{
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid seagreen;
+}

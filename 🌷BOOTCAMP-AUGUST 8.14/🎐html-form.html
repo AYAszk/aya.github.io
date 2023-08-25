@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form action="#" method="#">
+        <!-- 🐦‍⬛TEXT INPUT -->
+        <!-- 🐦‍⬛Placeholder can be put to almost text releted input type -->
+        <!-- 🐦‍⬛required = can be add in any input type -->
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name.." required>
+        <br>
+        <!-- 🐦‍⬛Size = changes the width to text releted input type -->
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lname" id="lname" size="2">
+        <br>
+        <!-- 🐦‍⬛PASSWORD -->
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" placeholder="Please Enter Password...">
+        <br>
+        <!-- 🐦‍⬛NUMBER INPUT : 選択できる上下の矢印作成できる。-->
+        <!-- 🐦‍⬛Min = Minimun, Max = Maximun : 最小・最大値の設定。-->
+        <label for="guest">Number of guest: </label>
+        <input type="number" name="guest" id="guest" min="1" max="20">
+        <br>
+        <!-- 🐦‍⬛DATE : 📅カレンダー-->
+        <label for="bday">Birthday</label>
+        <input type="date" name="bday" id="bday">
+        <br>
+        <!-- 🐦‍⬛EMAIL -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <!-- 🐦‍⬛TEXT AREA = Comments -->
+        <label for="comment">Comments</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment here..."></textarea>
+        <br>
+        <!-- 🐦‍⬛Radio Button : 複数の選択肢の中からどれか1つを選ぶ。形は⚪︎-->
+        <p>What is your favorite snack?:</p>
+        <br>
+        <input type="radio" name="snack" id="French-Fries" value="french-fries">
+        <label for="french-fries">French-Fries</label>
+
+        <input type="radio" name="snack" id="Chocolate" value="Chocolate">
+        <label for="Chocolate">Chocolate</label>
+
+        <input type="radio" name="snack" id="Ice-cream" value="Ice-cream">
+        <label for="Ice-cream">Ice cream</label>
+
+        <input type="radio" name="snack" id="chips" value="chips">
+        <label for="chips">Chips</label>
+        <br>
+        <!-- 🐦‍⬛CHECK BOX　: 全選択可能。形は◻️-->
+        <p>What is your favorite Flower:</p>
+        <br>
+        <input type="checkbox" name="flower" id="water-lily" value="water-lily">
+        <label for="water-lily">Water-Lily</label>
+
+        <input type="checkbox" name="flower" id="sun-flower" value="sun-flower">
+        <label for="sun-flower">Sun-Flower</label>
+
+        <input type="checkbox" name="flower" id="Cherry-blossoms" value="Cherry-blossoms">
+        <label for="Cherry-blossoms">Cherry-Blossoms</label>
+
+        <input type="checkbox" name="flower" id="rose" value="rose">
+        <label for="rose">Rose</label>
+        <br>
+        <!-- 🐦‍⬛DROPDOWN LIST : 入力したい箇所を選択した時に、ドロップダウンリストの項目から選んでデータを入力することができる機能。-->
+        <label for="device">What is your device?</label>
+
+         <!--フォームを送信してデータを受け渡すためにname属性を設定する。-->
+       <select name="device" id="device">
+            <option value="iphone">Iphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option>
+            <option value="iphone">Iphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option>
+        </select>
+        <br>
+        <!-- 🐦‍⬛Multiple LIST　: ２つ以上の選択肢を選択できる。 -->
+        <label for="device">What is your device?</label>
+        <select name="device" multiple>
+            <option value="iphone">Iphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option>
+            <!--<option value="iphone">Iphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option> -->
+        </select>
+        <br>
+        <!-- 🐦‍⬛File Input -->
+        <input type="file" name="file">
+        <br>
+        <!-- 🐦‍⬛Button -->
+        <button>Button</button>
+        <br>
+        <!-- 🐦‍⬛this will create a button but will not submit -->
+        <input type="button" value="Click me!" id="button">
+        <br>
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>

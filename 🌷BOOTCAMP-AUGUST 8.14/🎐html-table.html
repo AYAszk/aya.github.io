@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE</title>
+</head>
+<body>
+    <table border="1px" width="400px">
+       <!-- tr Table Row : 表の行-->
+       <!-- td Table Date : 表のデータ -->
+       <!-- Thead = Table Header : 表の見出し。文字が太字になり、中央に表示される。-->
+       <thead>
+          <tr>
+             <!-- th = table header that turns text into bold letters and it will be at the center-->
+             <th>
+                 <a href="#">
+                    <img src="assets/images/dog 2.webp" alt="dog" height="50px" width="50px">
+                 </a>
+             </th>
+             <th>2</th>
+             <th>3</th>
+          </tr>
+       </thead>
+       <!-- tbody = TABLE BODY -->
+       <tbody>
+           <tr>
+             <td>4</td>
+             <td>5</td>
+             <td>6</td>
+           </tr>
+       </tbody>
+    </table>
+    <hr>
+    <h3>COLSPAN</h3>
+    <table border="1px"width=400px >
+        <tr>
+            <!-- <th>NAME</th>にしてcolspan=3にすると３マス結合する。-->
+             <th>NAME</th>
+             <th colspan="2">CONTACTS</th>
+        </tr>
+        <tr>
+            <th>Yui</th>
+            <!--<td colspan="2">234234</td>-->
+            <td>234234</td>
+            <td>876543</td>
+        </tr>
+            <th>Yuki</th>
+            <td>464564</td>
+            <td>765334</td>
+    </table>
+    <hr>
+    <table border="1px" width="400px">
+        <tr>
+            <th>Name</th>
+            <th>Yuki</th>
+            <TH>Ai</TH>
+        </tr>
+        <tr>
+            <th rowspan="2">Contacts</th>
+            <td>234324</td>
+            <td>234567</td>
+        </tr>
+        <tr>
+            <td>234234</td>
+            <td>765757</td>
+        </tr>
+    </table>
+</body>
+</html>

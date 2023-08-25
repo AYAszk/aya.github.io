@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- コメント残す時はコマンド＋/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- 🍎INTERNAL CSS -->
+   <style>
+        #internal-css{
+            color:lightcoral;
+        }
+    </style>
+    <!--🍎EXTERNAL CSS -->
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <title>INTRO CSS</title>
+</head>
+<body>
+    <!-- 🍎INLINE CSS -->
+    <!--<h1 style="color: seagreen;">INLINE CSS</h1> -->
+    <!-- 🍎INTERNAL CSS -->
+    <!--<h1 id="internal-css">INTERNAL CSS</h1> -->
+    <h1 id="external">This is external css</h1>
+    <h1 class="external">This is external css</h1>
+    <h1>This is external css</h1>
+      <!-- <div class="public"> -->
+         <p>This is a paragraph and I am affected!</p>
+         <br>
+         <a href="#" id="private">Anchor</a>
+         <a href="#">Anchor</a>
+         <a href="#">Item 1</a>
+         <a href="#" id="diff">Item 2</a>
+      <!-- 🍎</div> </a>で2度囲むことで区別する。囲まないと全て色が変わる。-->
+        <ul class="kredo-it">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#"></a>Item 2</a></li>
+            <li><a href="#"></a>Item 3</a></li>
+        </ul>
+        <ol>
+            <li><a href="#" id="anchor">Item 1</a></li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+</body>
+</html>

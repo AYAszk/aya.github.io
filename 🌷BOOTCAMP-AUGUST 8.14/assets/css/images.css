@@ -1,0 +1,42 @@
+/* Object Fit = img */
+/* class="image"で設定した部分をアレンジ */
+.image{
+    /* Resize your actual image */
+    height: 500px;
+    width: 700px;
+    object-fit: contain;
+}
+
+div{
+    height: 670px;
+    width: 100%;
+}
+
+.div1{
+    background-image: url(../images/dog芝.jpeg);
+    /* Creates border for your image */
+    /* Background=size: cover */
+    background-size: cover;
+    background-position: center center;
+    /* background-position: 左、真ん中、右・上、真ん中、下 */
+    background-attachment: fixed;
+    /* background-attachment: fixed; 背景画像のウィンドウに対する位置を指定するためのプロパティ。
+    初期値はscrollであり、背景画像はウィンドウ上の他の内容とともにスクロールする。 
+    値にfixedを指定した場合、背景画像の位置はウィンドウに対し固定され、スクロールされない。*/
+}
+.div2{
+    background-image: url(../images/rabbit2芝.jpeg);
+    /* You can use px or % */
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+    background-color: paleturquoise;
+    background-position: center center;
+}
+
+/* SHORTHAND IMAGE */
+.div3{
+    /* Can have more than one expect background-size */
+    background: lightsalmon url(../images/ハチワレ顔.jpeg) no-repeat center center;
+    background-size: 200px 200px;
+    border-radius: 0px 20px 0px 20px;
+}

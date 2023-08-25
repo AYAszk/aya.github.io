@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: palegoldenrod; */
+}
+div{
+    /* border */
+    height: 200px;
+    width: 200px;
+}
+
+p{
+    color: white;
+}
+
+.div1{
+    background: teal;
+    margin: 50px;
+    padding-top: 20px;
+}
+
+.div2{
+    background-color: goldenrod;
+    padding: 10px 20px 30px 40px;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+.div3{
+    background-color: papayawhip;
+    /* margin : 外側の余白、位置が変わる。 */
+    margin: 30px;
+    border: 3px solid coral;
+    border-radius: 0px 20px 0px 20px;
+    /* overflow: hidden; この状態だと枠を飛び越えて全文が表示される。*/
+    overflow: scroll;
+    /* scrollだと枠内に収まり、スクロールする事で全文表示可能。 */
+    /* Box-shadow */
+    box-shadow: 3px 3px 3px 3px goldenrod;
+}
+.overflow{
+    /* padding : 内側の余白,位置は変わらないが文章が中心部に動く。 */
+    padding: 5px;
+    color: black;
+}

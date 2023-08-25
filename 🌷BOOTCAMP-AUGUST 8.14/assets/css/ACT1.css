@@ -1,0 +1,36 @@
+table{
+    height: 50%;
+    width: 50%;
+    border: 2px solid darkslategray;
+    text-align: center;
+    /* border-collapse: collapse; */
+    /* border-collapse: separate;
+    border-spacing: 10px 20px;
+    empty-cells: hide; */
+}
+.image{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    /* background-size: cover; */
+    /* background-position: bottom; */
+}
+tr.eternal{
+    background-color: rgba(237, 118, 158, 0.694);
+    color: azure;
+    
+}
+tr.odd{
+    background-color: rgb(205, 251, 251);
+    color: black;
+}
+tr.even{
+    background-color: rgb(230, 249, 205);
+    /* color: teal; */
+ }
+ 
+/* td{
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid seagreen;
+} */

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 300px;
+    width: 340px;
+    position: absolute;
+}
+.box.white {
+    background-color: rgb(140, 206, 185);
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+.div1{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;
+    width: 150px;
+    float: left;
+    box-shadow: 3px 3px 8px 3px rgb(195, 194, 191);
+    z-index: 2;
+}
+.div2{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;
+    width: 150px;
+    float: left;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 3px 8px 3px rgb(195, 194, 191);
+    z-index: 2;
+}

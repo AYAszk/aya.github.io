@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .float{
+    float: left;
+}
+.float1{
+     float: right;
+} */
+.div1{
+    margin-top: 1500px;
+    margin-left: 200px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    height: 650px;
+    width: 350px;
+    float: left;
+}
+.div2{
+    margin-top: 1500px;
+    margin-right: 200px;
+    border: 1px solid black;
+    height: 650px;
+    width: 350px;
+    float: right;
+}
+/* .z-index{
+    z-index: -2;
+} */
+p{
+    padding: 10px;
+}
+h2{
+    color: white;
+}
+h1{
+    margin-top: 90px;
+    text-decoration: underline;
+}
+.static{
+    position: static;
+    background: goldenrod;
+}
+.relative{
+    position: relative;
+    background: teal;
+    top: 50px;
+    left: 50px;
+    margin-bottom: 1000px;
+}
+.absolute{
+    position: absolute;
+    background-color: purple;
+    top: 170px;
+    right: 50px;
+}
+.fixed{
+    position: fixed;
+    background-color: seagreen;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px;
+}  
+.fixed a{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+/* z-index : 要素が大きい程上に来る。*/
+.box {
+    margin-top: 1000px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+
+.box.blue {
+    background-color: #3498db;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.box.red {
+    background-color: #e74c3c;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+
+.box.green {
+    background-color: rgba(7, 107, 12, 0.514);
+    left: 150px;
+    top: 150px;
+    z-index: 2;
+}

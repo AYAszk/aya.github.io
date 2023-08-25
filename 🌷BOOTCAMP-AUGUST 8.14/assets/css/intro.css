@@ -1,0 +1,42 @@
+/* cssのコメント　*/ 
+/* コメント残す時はコマンド+/ */
+/* 🍎Universal : 全ての要素を対象に指定出来る. */
+*{
+    color: teal;
+    background-color: lightblue;
+}
+/* 🍎ID : cssでは# */
+#external{
+color: thistle;
+background-color: purple;
+}
+#private{
+    color: goldenrod;
+    background-color: palegoldenrod;
+}
+/*　🍎Class　: cssでは. */
+.external{
+    color: red;
+    background-color: lightsalmon;
+}
+/* 🍎Element */
+a#diff{
+    color: chocolate;
+}
+a{
+    color: lightcoral;
+}
+/* Calling SELECTORS */
+/* ul li a{
+
+} */
+.kredo-it li a{
+    color: red;
+}
+ol li a#anchor{
+    color: green;
+}
+.public{
+    color: pink;
+    background-color: chocolate;
+}

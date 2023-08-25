@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* auto : 自動で中心に配置してくれる。 */
+p{
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.solid{
+    border: 10px solid tomato;
+}
+.dotted{
+    border: 10px dotted teal;
+}
+.dashed{
+    border: 10px dashed deeppink;
+}
+.double{
+    border: 10px double orangered ;
+}
+.groove{
+    border: 10px groove olive;
+}
+.ridge{
+    border: 10px ridge purple;
+}
+.inset{
+    border: 10px inset coral;
+}
+.outset{
+    border-left: 10px outset blue;
+    /* border: 10px none; */
+    background-color: aquamarine;
+}
+.radius{
+    border: 10px solid orange;
+    /* 4 values same as margin and padding*/
+    /* px or % */
+    /* 角と丸 */
+    border-radius: 0px 20px 0px 20px;
+}
